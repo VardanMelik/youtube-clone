@@ -1,9 +1,12 @@
 .header {
     display: flex;
-    /*position: fixed;*/
+    position: sticky;
+    top: 0;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    z-index: 100;
+    background-color: white;
 }
 
 .header__left {}
@@ -20,7 +23,16 @@
     border: none;
 }
 
-.header__inputButton {}
+.header__inputButton {
+    width: 50px !important;
+    background-color: #fafafa;
+    border-left: 1px solid lightgray;
+    color: gray;
+}
+
+.header__icon {
+    margin-right: 8px;
+}
 
 .header__icons {
     display: flex;
